@@ -1,0 +1,4 @@
+{
+    "requireConfigFile": false,
+    "parser": "@babel/eslint-parser"
+}
