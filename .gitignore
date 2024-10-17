@@ -6,3 +6,4 @@
 .env.production.local
 
 __pycache__
+config_images_gallery.json
