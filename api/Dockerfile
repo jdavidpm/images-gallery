@@ -5,6 +5,7 @@ WORKDIR /app
 EXPOSE 5050
 
 COPY Pipfile Pipfile.lock ./
+COPY config_images_gallery.json /etc/config_images_gallery.json
 
 RUN pip install pipenv
 RUN pipenv requirements > requirements.txt
