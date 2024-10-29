@@ -2,6 +2,7 @@ import json
 import requests
 from flask import Flask, request
 from flask_cors import CORS
+from mongo_client import insert_test_document
 
 with open("/etc/config_images_gallery.json", encoding="utf-8") as config_file:
     config = json.load(config_file)
@@ -17,6 +18,7 @@ CORS(app)
 
 app.config["DEBUG"] = bool(config["DEBUG"])
 
+insert_test_document()
 
 @app.route("/new-image")
 def new_image():
